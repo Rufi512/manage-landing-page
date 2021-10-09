@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./static/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Manage landing page</title>
+    <style>
+        .attribution {
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: wrap;
+        height: 20px;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        margin-left: 5px;
+        color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+    <main>
+        <header id="header">
+            <img width="146" height="24" aria-label="logo" src="./static/icons/logo.svg" alt="logo">
+            <svg id="icon-hamburger" aria-label="menu" onClick="showBar(true)" style="cursor: pointer;" data-src="./static/icons/icon-hamburger.svg"></svg>
+            <nav id="navigation">
+                <ul>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+              <svg onClick="showBar(false)" aria-label="close" style="cursor: pointer;" data-src="./static/icons/icon-close.svg"></svg>   
+            </nav>
+            <button aria-label="redirect">Get Started</button>
+        </header>
+        <div class="pattern-container">
+        <img class="tablet-pattern" src="./static/icons/bg-tablet-pattern.svg" alt="tablet-pattern">
+        </div>
+        <section class="principal">
+            <div>
+                <img width="580" height="525" src="./static/icons/illustration-intro.svg" alt="Graphics">
+            </div>
+            <div>
+                <h1>Bring everyone together to build better products.</h1>
+                <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+                <button aria-label="redirect">Get Started</button>
+                 <img class="tablet-pattern" src="./static/icons/bg-tablet-pattern.svg" alt="tablet-pattern">
+            </div>
+        </section>
+        <section class="manage">
+            <div>
+                <h2>What’s different about Manage?</h2>
+                <p>Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
+            </div>
+            <div class="container-list">
+                <div>
+                    <h2><span>01</span>Track company-wide progress</h2>
+                    <p>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+                </div>
+                <div>
+                    <h2><span>02</span>Advanced built-in reports</h2>
+                    <p>Set internal delivery estimates and track progress toward company
+                        goals. Our customisable dashboard helps you build out the reports
+                        you need to keep key stakeholders informed.</p>
+                </div>
+                <div>
+                    <h2><span>03</span>Everything you need in one place</h2>
+                    <p>Stop jumping from one service to another to communicate, store files,
+                        track tasks and share documents. Manage offers an all-in-one team
+                        productivity solution.</p>
+                </div>
+            </div>
+        </section>
+        <section class="comments">
+            <img class="tablet-pattern" src="./static/icons/bg-tablet-pattern.svg" alt="tablet-pattern">
+            <h2>What they’ve said</h2>
+            <div class="container-slider">
+                <div class="card">
+                    <img wisth="144" height="144" src="./static/images/avatar-anisha.png" alt="avatar-anisha">
+                    <h3>Anisha Li</h3>
+                    <p>“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+                </div>
+                <div class="card">
+                    <img wisth="144" height="144" src="./static/images/avatar-ali.png" alt="avatar-ali">
+                    <h3>Ali Bravo</h3>
+                    <p>“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
+                </div>
+                <div class="card">
+                    <img wisth="144" height="144" src="./static/images/avatar-richard.png" alt="avatar-richard">
+                    <h3>Richard Watts</h3>
+                    <p>“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”</p>
+                </div>
+                <div class="card">
+                    <img wisth="144" height="144" src="./static/images/avatar-shanai.png" alt="avatar-shanai">
+                    <h3>Shanai Gough</h3>
+                    <p>“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+                </div>
+            </div>
+            <button aria-label="redirect">Get Started</button>
+        </section>
+        <section class="team">
+            <div>
+            <h2>Simplify how your team works today.</h2>
+            <button aria-label="redirect">Get Started</button>
+            <svg aria-label="pattern-mobile" class="pattern-mobile" data-src="./static/icons/bg-simplify-section-mobile.svg"></svg>
+            <svg aria-label="pattern-desktop" class="pattern-desktop" data-src="./static/icons/bg-simplify-section-desktop.svg"></svg>
+            </div>
+        </section>
+        <footer>
+            <form id="formEmail" class="input-inbox">
+                <input class="field" type="text" name="email" placeholder="Updates in your inbox..." /> <button type="submit" aria-label="submit" class="submit">GO</button>
+                <p class="warning">Please insert a valid email</p>
+            </form>
+            <nav class="nav">
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+                <ul class="links-second">
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <svg aria-label="facebook-icon" data-src="./static/icons/icon-facebook.svg"></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg aria-label="youtube-icon" data-src="./static/icons/icon-youtube.svg"></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg aria-label="twitter-icon" data-src="./static/icons/icon-twitter.svg"></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg aria-label="pinterest-icon" data-src="./static/icons/icon-pinterest.svg"></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg aria-label="instagram-icon" data-src="./static/icons/icon-instagram.svg"></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <svg aria-label="logo" class="logo-footer" data-src="./static/icons/logo.svg"></svg>
+            <p class="copyright">Copyright 2020. All Rights Reserved</p>
+        </footer>
+
+        <div class="attribution">
+        Challenge by  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/Rufi512">Rufi512</a>.
+    </div>
+        </div>
+    </main>
+</body>
+
+</html>
