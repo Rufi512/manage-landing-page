@@ -5,6 +5,7 @@
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshots](#screenshots)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
@@ -33,6 +34,12 @@ Your users should be able to:
 | Desktop Design | Desktop Solution  | 
 |--|--|
 | <img src="./design/desktop-design.jpg" width="500"/> | <img src="./screenshots/desktop.png" width="500"/> |
+
+### Links
+
+- Solution URL: [FrontendMentor Solution](https://www.frontendmentor.io/solutions/manage-landing-page-html-css-js-webpack-nDVRX0LK8)
+
+- Live Site URL: https://rufi512.github.io/manage-landing-page/
 
 
 ## My Process
